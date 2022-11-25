@@ -21,4 +21,12 @@ public class Task {
         this.startDate = newStart;
     }
 
+
+    public void changeDue(Date newDue) {
+        this.dueDate = newDue;
+    }
+
+    public void changeLen(int newLen) {
+        this.completionLength = newLen;
+    }
 }

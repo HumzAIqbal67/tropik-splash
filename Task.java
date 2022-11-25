@@ -17,4 +17,8 @@ public class Task {
     public void changeName(String newName) {
         this.taskName = newName;
     }
+    public void changeStart(Date newStart) {
+        this.startDate = newStart;
+    }
+
 }

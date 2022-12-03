@@ -5,6 +5,7 @@ public class ToDoList {
 
     public ToDoList(){
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.tasks = new ArrayList<>();
     }
 
@@ -14,6 +15,9 @@ public class ToDoList {
 
     public void removeTask(Task t){
         this.tasks.remove(t);
+=======
+        this.tasks = new ArrayList()
+>>>>>>> d6ade24 (ToDoList created)
 =======
         this.tasks = new ArrayList()
 >>>>>>> d6ade24 (ToDoList created)

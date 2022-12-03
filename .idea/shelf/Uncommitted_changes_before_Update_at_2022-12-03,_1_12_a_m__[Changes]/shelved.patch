@@ -1,0 +1,75 @@
+Index: pom.xml
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -5,9 +5,9 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <groupId>com.example</groupId>
+-    <artifactId>demo</artifactId>
++    <artifactId>getItDone</artifactId>
+     <version>1.0-SNAPSHOT</version>
+-    <name>demo</name>
++    <name>getItDone</name>
+ 
+     <properties>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+@@ -60,7 +60,7 @@
+                         <!-- Default configuration for running with: mvn clean javafx:run -->
+                         <id>default-cli</id>
+                         <configuration>
+-                            <mainClass>com.example.demo/com.example.demo.HelloApplication</mainClass>
++                            <mainClass>com.example.getitdone/com.example.getitdone.HelloApplication</mainClass>
+                             <launcher>app</launcher>
+                             <jlinkZipName>app</jlinkZipName>
+                             <jlinkImageName>app</jlinkImageName>
+Index: src/main/java/module-info.java
+===================================================================
+diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+--- a/src/main/java/module-info.java	
++++ b/src/main/java/module-info.java	
+@@ -1,8 +1,8 @@
+-module com.example.demo {
++module com.example.getitdone {
+     requires javafx.controls;
+     requires javafx.fxml;
+ 
+ 
+-    opens com.example.demo to javafx.fxml;
+-    exports com.example.demo;
++    opens com.example.getitdone to javafx.fxml;
++    exports com.example.getitdone;
+ }
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,5 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	
++++ b/.idea/modules.xml	
+@@ -2,6 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
++      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/tropik-splash.iml" filepath="$PROJECT_DIR$/.idea/tropik-splash.iml" />
+     </modules>
+   </component>
